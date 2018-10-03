@@ -192,18 +192,11 @@ class StartingPointFormState extends State<StartingPointForm> {
                   if (_formKey.currentState.validate()) {
                     // If the form is valid, we want to show a Snackbar
                     Scaffold.of(context).showSnackBar(
-                        SnackBar(content: Text(_nameController.text)));
-
-                    // return showDialog(
-                    //   context: context,
-                    //   builder: (context) {
-                    //     return AlertDialog(
-                    //       // Retrieve the text the user has typed in using our
-                    //       // TextEditingController
-                    //       content: Text(_nameController.text),
-                    //     );
-                    //   },
-                    // );
+                        SnackBar(content: Text(
+                          'Name: ' + _nameController.text
+                        )
+                      )
+                    );
                   }
                 },
                 child: Text('Save'),

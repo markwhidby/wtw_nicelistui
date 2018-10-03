@@ -41,9 +41,11 @@ class _ListPageState extends State<ListPage> {
         children: <Widget>[
           new IconButton(
             icon: Icon(Icons.near_me, color: Colors.white),
+            onPressed: null,
           ),
           new IconButton(
             icon: Icon(Icons.add, color: Colors.white),
+            onPressed: null,
           ),
         ],
       ),

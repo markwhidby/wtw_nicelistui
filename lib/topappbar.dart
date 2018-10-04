@@ -6,7 +6,7 @@ class TopAppBar extends StatelessWidget {
     return AppBar(
       elevation: 0.1,
       backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
-      title: Text('Title'),
+      title: Text('WtW AppBar class'),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.list),
